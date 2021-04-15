@@ -1,4 +1,3 @@
-# Netflix_Page
+# Jaqueflix
 
-Reprodução da página inicial Netflix. 
-Projeto desenvolvido no bootcamp de HTML Developer da DIO.
+Reprodução de página inicial com filmes e séries preferidos.

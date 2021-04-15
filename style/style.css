@@ -1,5 +1,4 @@
 :root{
-    --vermelho: #E50914;
     --preta: #141414;
 }
 
@@ -18,57 +17,66 @@ body {
 
 }
 
+/*header*/
+
 header .container {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
-
+    margin-top: 20px;
     
 }
 
-/*header .logo {
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
-} */
-
-header .container img {
-    width: 9%;
+header .logo {
     margin-left: 20px;
+    color:salmon;
+    font-family: 'Arial Black', Times;
+    font-size: 20px;
+} 
+
+header .logo .flix {
+    color:chartreuse;
 }
 
 header nav a {
     text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
+    color: #fff;
+    margin-right: 20px;
+
 }
 
 header nav a:hover {
-    color: #fff;
+    color: #aaa;
 }
 
 /*filme principal*/
+
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-principal1.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/imgprincipal.jpg');
 
-    height: 450px;
-    background-size: cover;
+    background-size:cover;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
 
     margin-top: -80px;
 }
 
+.filme-principal .container {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 80px;
+  
+}
+
 .filme-principal .descricao {
     margin-bottom: 40px;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 30px;
+    margin-left: 6px;
 }
 
 .filme-principal .titulo {
@@ -77,6 +85,14 @@ header nav a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.titulo-filmes {
+    font-weight: bold;
+    font-size: 20px;
+
+    margin-top: 5%;
+}
+
+/*BOTÃO*/
 .botao {
     background-color: rgba(0,0,0,.50);
     border: none; 
@@ -84,36 +100,51 @@ header nav a:hover {
 
     padding: 15px 30px;
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4%;
 
     cursor: pointer;
     transition: .3s ease all;
 }
 
+.botao1 {
+    background-color:cornsilk ;
+    color: black;
+}
+
+.botao1 i {
+    color: black;
+}
+
 .botao:hover {
-    background-color: white;
-    color: black; 
+    opacity: 0.8;
 }
 
 .botao i{
     margin-right: 8px;
 }
 
-.container {
-    margin-left: 20px;
+.item:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-.filme-principal .container {
-    width: 70%;
+/*Outros filmes*/
+
+.carrossel-filmes {
+    margin: 0px 22px;
+
 }
 
 .box-filme {
     height: 100%;
     width: 100%;
     display: block;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 .item {
-    width: 98%;
+    width: 100%;
 }
